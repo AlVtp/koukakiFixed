@@ -1,0 +1,155 @@
+#background-video {
+  z-index: 0 !important;
+  left: auto !important;
+  min-height: 806px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  z-index: 2;
+  width: 30% !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  animation: float-logo 4s linear infinite;
+}
+
+.logo {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.logo img {
+  z-index: 2;
+  width: 30% !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  animation: float-logo 4s linear infinite;
+}
+
+.story {
+  animation-name: fadein2;
+  animation-duration: 2s;
+}
+.story p {
+  animation-name: fadein3;
+  animation-duration: 2s;
+}
+
+@keyframes float-logo {
+  0% {
+    transform: translate(3%, 3%);
+  }
+  50% {
+    transform: translate(-2%, 3%);
+  }
+  75% {
+    transform: translate(3%, -2%);
+  }
+  100% {
+    transform: translate(3%, 3%);
+  }
+}
+@keyframes fadein {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadein2 {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadein3 {
+  from {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes rotating {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.site-footer::after,
+.site-footer ul::after,
+.site-footer::before,
+.story__article::after,
+#studio h2::before,
+#studio h2::after,
+.story h2::after,
+.fleur {
+  animation: rotating 20s normal linear infinite;
+}
+
+.story h2::after {
+  transform-origin: 77px 77px;
+}
+
+#liste::before {
+  content: url("./assets/images/Sunflower.png");
+  display: none !important;
+  position: absolute;
+  left: 4em;
+  top: 0em;
+}
+#liste::after {
+  content: url("./assets/images/orchid.png");
+  display: none !important;
+  bottom: 22.8em !important;
+}
+
+#liste ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  padding-top: 10em;
+}
+#liste ul li {
+  flex: 1;
+  text-align: center;
+}
+#liste ul li a {
+  text-decoration: none;
+}
+
+#colophon {
+  padding-left: 13em;
+}
+
+.site-footer::after {
+  bottom: 22.8em !important;
+}
+
+.site-footer::before {
+  left: 7em !important;
+  top: 11em !important;
+  position: absolute !important;
+  height: 155px;
+  width: 155px;
+}
+
+.site-footer {
+  padding-top: 8em !important;
+}/*# sourceMappingURL=style.css.map */
