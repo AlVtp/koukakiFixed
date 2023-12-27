@@ -139,17 +139,17 @@
 }
 
 .site-footer::after {
-  bottom: 22.8em !important;
+  bottom: 19.4em !important;
 }
 
 .site-footer::before {
   left: 7em !important;
-  top: 11em !important;
+  top: 4em !important;
   position: absolute !important;
   height: 155px;
   width: 155px;
 }
 
 .site-footer {
-  padding-top: 8em !important;
+  padding-top: 10em !important;
 }/*# sourceMappingURL=style.css.map */
