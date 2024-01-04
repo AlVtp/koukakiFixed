@@ -32,4 +32,5 @@ get_template_part('template-parts/section-oscar');
 
 
 </body>
+
 </html>

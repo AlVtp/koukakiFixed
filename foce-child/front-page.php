@@ -26,32 +26,72 @@ get_header();
             );
             $characters_query = new WP_Query($args);
             ?>
+            
             <article id="characters">
-                <div class="main-character">
                     <h3>Les personnages</h3>
-                    <?php
-                    $main_character = $characters_query->posts[0];
-                    echo '<figure>';
-                    echo get_the_post_thumbnail( $main_character->ID, 'full' );
-                    echo '<figcaption>'. $main_character->post_title . '</figcaption>';
-                    echo '</figure>';
-                    $characters_query->next_post();
-                    ?>
-                </div>
-                <div class="other-characters">
-                    <?php
-                    while ( $characters_query->have_posts() ) {
-                        $characters_query->the_post();
-                        echo '<figure>';
-                        echo get_the_post_thumbnail( get_the_ID(), 'full' );
-                        echo '<figcaption>';
-                        the_title();
-                        echo'</figcaption>';
-                        echo '</figure>';
-                    }
-                    ?>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+                                        <!-- Slider main container -->
+                    <div class="swiper-container swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Kawaneko.png'; ?>" alt="chat bleu">
+                        <p>Kawaneko</p>
+                        </div>
+                                <div class="swiper-slide">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Orenjiiro.png'; ?>" alt="chat orange">
+                        <p>Orenjiiro</p>
+                        </div>
+                                <div class="swiper-slide">   
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Pinku.png'; ?>" alt="chat blanc">
+                        <p>Pinku</p>
+                        </div>
+                                <div class="swiper-slide">   
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Tenshi.png'; ?>" alt="chat jaune">
+                        <p>Tenshi</p>
+                        </div>
+                                <div class="swiper-slide">
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
+                        <p>Jaakuna</p>
+                        </div> 
+                                       
                 </div>
             </article>
+
             <article id="place">
                 <div>
                     <h3>Le Lieu</h3>
