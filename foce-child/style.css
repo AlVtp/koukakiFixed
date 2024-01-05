@@ -143,6 +143,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.story #characters div {
+  flex: 0;
+}
 
 #characters > h3 {
   position: relative;

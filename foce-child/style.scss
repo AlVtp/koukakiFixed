@@ -155,6 +155,9 @@ body {
 .story #characters {
   display: flex;
   flex-direction: column;
+  div {
+    flex: 0;
+  }
 }
 
 #characters > h3 {
