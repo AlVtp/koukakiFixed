@@ -29,38 +29,7 @@ get_header();
             
             <article id="characters">
                     <h3>Les personnages</h3>
-                    <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
+                    
 
                                         <!-- Slider main container -->
                     <div class="swiper-container swiper">
@@ -87,12 +56,10 @@ get_header();
                         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
                         <p>Jaakuna</p>
                         </div> 
-                                       
-                </div>
+                            </div>                   
+                    </div>
             </article>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
