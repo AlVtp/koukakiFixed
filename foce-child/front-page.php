@@ -45,19 +45,23 @@ get_header();
                         <p>Orenjiiro</p>
                         </div>
                                 <div class="swiper-slide">   
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Pinku.png'; ?>" alt="chat blanc">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Pinku.png'; ?>" alt="chat blanc">
                         <p>Pinku</p>
                         </div>
                                 <div class="swiper-slide">   
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Tenshi.png'; ?>" alt="chat jaune">
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Tenshi.png'; ?>" alt="chat jaune">
                         <p>Tenshi</p>
                         </div>
                                 <div class="swiper-slide">
-                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
-                        <p>Jaakuna</p>
+                                <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
+                                <p>Jaakuna</p>
                         </div> 
-                            </div>                   
-                    </div>
+                            </div>    
+                            
+                            <div class="swiper-pagination"></div>         
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>      
+                            </div>
             </article>
 
 
@@ -87,3 +91,4 @@ get_header();
 
 <?php
 get_footer();
+

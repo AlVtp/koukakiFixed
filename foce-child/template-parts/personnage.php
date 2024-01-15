@@ -33,5 +33,9 @@
                         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
                         <p>Jaakuna</p>
                     </div>
+                    <div>
+                        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/characters/Jaakuna.png'; ?>" alt="chat noir">
+                        <p>Jaakuna</p>
+                    </div>
                    </div>
                    </div>

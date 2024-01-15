@@ -1,12 +1,6 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-function enqueue_scripts() {
-    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true, true );
-    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'));
-    wp_enqueue_script( 'foceChild', get_stylesheet_directory_uri() . '/js/slider.js', array('swiper'), false);
-}
-add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'foce-parent-style', get_template_directory_uri() . '/style.css', array(), _S_VERSION );
@@ -14,6 +8,14 @@ function theme_enqueue_styles() {
     // wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'));
     // wp_enqueue_script( 'foceChild', get_stylesheet_directory_uri() . '/js/slider.js', array('swiper'), false);
 }
+
+function enqueue_scripts() {
+    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true, true );
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'));
+    wp_enqueue_script( 'foceChild', get_stylesheet_directory_uri() . '/js/slider.js', array('swiper'), false);
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
+
 
 
 // Get customizer options form parent theme
